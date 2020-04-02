@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "npmClient": "yarn",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "api": "yarn workspace @react-apollo-starter/api dev",
+    "website": "yarn workspace @react-apollo-starter/website start",
+    "start": "concurrently --kill-others-on-fail \"yarn api\" \"yarn website\"",
+    "clean-cache": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' +",
+    "fresh-install": "npm run clean-cache && yarn install"
+  },
+  "nohoist": [
+    "**/react",
+    "**/react/**",
+    "**/react-dom",
+    "**/react-dom/**"
+  ],
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}

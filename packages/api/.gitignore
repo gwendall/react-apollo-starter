@@ -1,0 +1,21 @@
+tmp/
+node_modules/
+.vscode/
+.idea/
+*.log
+npm-debug.log.*
+
+.next/
+
+build/
+
+coverage
+.nyc_output
+
+.DS_Store
+.npm
+.eslintcache
+*.tgz
+# src/generated/*
+
+.now

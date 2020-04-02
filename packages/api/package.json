@@ -1,0 +1,25 @@
+{
+  "name": "@react-apollo-starter/api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-transform-define": "^2.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "apollo-server": "^2.11.0",
+    "graphql": "^14.6.0",
+    "graphql-tools": "^4.0.7",
+    "lodash": "^4.17.15"
+  },
+  "scripts": {
+    "dev": "TZ=utc nodemon --no-stdin --inspect index.js",
+    "start": "node index.js"
+  }
+}
