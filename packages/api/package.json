@@ -16,7 +16,7 @@
     "apollo-server": "^2.11.0",
     "graphql": "^14.6.0",
     "graphql-tools": "^4.0.7",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   },
   "scripts": {
     "dev": "TZ=utc nodemon --no-stdin --inspect index.js",
